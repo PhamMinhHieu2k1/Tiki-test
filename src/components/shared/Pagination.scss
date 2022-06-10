@@ -1,0 +1,12 @@
+.ct-pagination {
+    .ant-pagination {
+        &-item {
+            border: none;
+        }
+        &-item,
+        &-prev,
+        &-next {
+            @apply text-black #{!important};
+        }
+    }
+}

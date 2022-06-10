@@ -1,0 +1,56 @@
+.login-modal {
+    .ant-modal-body {
+        @apply p-0 absolute top-1/2 left-1/2 #{!important};
+        width: "800px";
+        transform: translate(-50%);
+    }
+
+    &__btn {
+        &--hide {
+            @apply absolute top-0 right-0 w-10 h-10 bg-white rounded-full z-50 hover:bg-blue-400 hover:border-0 hover:text-white #{!important};
+            transform: translate(50%, -50%);
+        }
+    }
+}
+
+.login-form {
+    &__left {
+        @apply py-10 px-11 bg-white;
+        border-radius: 20px 0 0 20px;
+    }
+
+    &__right {
+        @apply flex flex-col justify-center items-center #{!important};
+        background: linear-gradient(
+            136deg,
+            rgb(240, 248, 255) -1%,
+            rgb(219, 238, 255) 85%
+        );
+        border-radius: 0 20px 20px 0;
+
+        .content {
+            @apply mt-8;
+
+            h4,
+            p {
+                @apply text-blue-600 text-center;
+            }
+
+            h4 {
+                @apply mb-1;
+            }
+        }
+    }
+
+    &__input {
+        &-phone {
+            @apply text-lg py-3  #{!important};
+        }
+    }
+
+    &__btn {
+        &-submit {
+            @apply my-7 p-3 h-auto text-lg rounded bg-red-500 hover:bg-red-400 border-0 text-white  #{!important};
+        }
+    }
+}

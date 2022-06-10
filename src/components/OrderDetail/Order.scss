@@ -1,0 +1,35 @@
+.ordered {
+    &__item {
+        padding: 1rem 0;
+    }
+
+    &__order {
+        &-info {
+            display: flex;
+            justify-content: space-between;
+            figure {
+                width: 85%;
+                display: flex;
+                justify-content: space-between;
+                figcaption {
+                    width: 80%;
+                    > h4,
+                    > p {
+                        line-height: 1.5;
+                    }
+                }
+            }
+        }
+
+        &-img {
+            max-height: 150px;
+            width: 15%;
+            object-fit: cover;
+        }
+
+        &-price {
+            width: 20%;
+            text-align: right;
+        }
+    }
+}

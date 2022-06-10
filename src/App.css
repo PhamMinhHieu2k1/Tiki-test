@@ -1,0 +1,8 @@
+@import "antd/dist/antd.css";
+
+.ant-image-preview-root .ant-image-preview-img-wrapper::before{
+    display: none;
+}
+.ant-image-preview-root .ant-image-preview-img{
+    margin: 0 auto;
+}

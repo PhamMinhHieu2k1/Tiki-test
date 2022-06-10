@@ -1,0 +1,21 @@
+.cart {
+    &__items {
+        &-collapse {
+            .ant-collapse-header,
+            .ant-collapse-content-box {
+                @apply p-0 #{!important};
+            }
+        }
+        &-item-name {
+            color: rgb(13, 92, 182);
+            text-decoration: none;
+            display: -webkit-inline-box;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            vertical-align: top;
+            width: calc(100% - 30px);
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.header {
+    &__top {
+        .ant-input-group.ant-input-group-compact {
+            @apply flex;
+        }
+    }
+
+    &__btn {
+        &-login {
+            @apply flex items-center h-auto bg-transparent border-0 ml-4 hover:bg-blue-400 #{!important};
+        }
+
+        &-search {
+            @apply flex items-center bg-blue-800 hover:bg-blue-600 text-white #{!important};
+        }
+    }
+}

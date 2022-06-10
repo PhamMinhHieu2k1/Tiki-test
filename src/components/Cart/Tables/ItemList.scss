@@ -1,0 +1,34 @@
+.item-list {
+    &__item {
+        &-name {
+            display: -webkit-box;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+    }
+
+    &__table-header-row {
+        @apply bg-cyan-500;
+
+        .ant-table-cell {
+            @apply bg-transparent text-white;
+        }
+    }
+
+    &__amount {
+        @apply h-6;
+        > .ant-input-number-wrapper.ant-input-number-group {
+            width: 100px;
+        }
+
+        .ant-input-number-input {
+            @apply h-full;
+        }
+
+        .ant-input-number-group-addon {
+            @apply w-6 px-0;
+        }
+    }
+}

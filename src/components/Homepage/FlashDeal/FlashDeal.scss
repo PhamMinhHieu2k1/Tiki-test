@@ -1,0 +1,15 @@
+@keyframes blink {
+    from {
+        opacity: 50%;
+        transform: scale(1);
+    }
+
+    to {
+        opacity: 100%;
+        transform: scale(1.1);
+    }
+}
+
+.blink {
+    animation: blink 0.75s linear infinite backwards;
+}
